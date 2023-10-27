@@ -1,0 +1,77 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: 8px;
+    height: 425px;
+    width: 275px;
+    background-image: linear-gradient( rgb(61, 60, 60), rgb(37, 36, 36), rgb(24, 23, 23));
+    margin-left: 35vw;
+    margin-top: 40px;
+}
+
+.uperside {
+    border-radius: 4px;
+    height: 15px;
+    margin: 2px;
+    display: flexbox;
+}
+
+.text {
+    margin-left: 5px;
+    color: white;
+    font-size: small;
+}
+
+.solar {
+    height: 17px;
+    width: 45px;
+    float: right;
+    margin-top: -14px;
+    margin-right: 10px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: white;
+}
+
+.screan {
+    justify-content: center;
+    padding: 2px;
+    margin: 2px;
+    /*   border: 1px solid gray;
+    background: white; */
+    border-radius: 4px;
+}
+
+input {
+    height: 35px;
+    width: 255px;
+}
+
+.mybtn {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flexbox;
+
+}
+
+button {
+    height: 40px;
+    width: 50px;
+    border: 2px solid black;
+    color: white;
+    border-radius: 50px;
+    padding: 5px;
+    margin: 5px;
+    background: transparent;
+    box-shadow: -1px 1px 4px white;;
+
+}
+
+button:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
