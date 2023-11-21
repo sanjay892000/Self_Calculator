@@ -1,39 +1,34 @@
 let screan = document.getElementById('inText');
- let mybtn = document.querySelectorAll('button');
+let mybtn = document.querySelectorAll('button');
 let screanValue = '';
 
 for (items of mybtn) {
     items.addEventListener('click', (e) => {
-       /* btnText = e.target.value; */
-        btnText = e.target.innerText;
+        /* btnText = e.target.value; */
+        var btnText = e.target.value;
 
-        if (btnText == 'X') {
-           btnText = '*';
-            screanValue +=btnText;
+        if (btnText == '*') {
+            screanValue += btnText;
             screan.value = screanValue;
         }
 
-       else if (btnText == 'C') {
+        else if (btnText == 'MC') {
             screanValue = "";
             screan.value = screanValue;
         }
-        
-       else if (btnText == 'DEL') {
+
+        else if (btnText == 'DEL') {
             screanValue = screanValue.slice(0, screanValue.length - 1);
-            screan.value=screanValue;
+            screan.value = screanValue;
         }
 
         else if (btnText == '=') {
-            screan.value = eval(screanValue);
-            console.log(eval(screanValue))
-
+            screan.value= eval(screanValue);
         }
-        else{
-            screanValue+=btnText;
-            screan.value=screanValue;
+        else {
+            screanValue += btnText;
+            screan.value = screanValue;
         }
     })
-    screanValue='';
-    screan.value=screanValue;
 }
 
